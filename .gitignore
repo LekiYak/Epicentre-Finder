@@ -1,0 +1,19 @@
+# venv
+env/
+
+# random ass plots
+plot.png
+plot1.png
+plot2.png
+plot3.png
+epicentre.png
+
+# datasets
+data.csv
+BC_dawson_creek.csv
+
+# scripts
+test.py
+
+# other
+__pycache__/
