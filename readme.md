@@ -61,8 +61,8 @@ Montreal-Mirabel International Airport | 21.3 | 14.5 | 45.671640840480165 | -74.
 |-- readme.md
 |-- requirements.txt
 |-- src
-|   |-- epicentre_finder.py 
-|   |-- latlong_to_utmepsg.py
+    |-- epicentre_finder.py 
+    |-- latlong_to_utmepsg.py
 ```
 
 
