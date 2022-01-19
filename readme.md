@@ -2,6 +2,16 @@
 
 A seismology script created with Python 3.9.9
 
+## Table of Contents
+1. [Description](#Description)
+2. [Visualization](#Visualization)
+3. [Usage](#Usage)
+    1. [The Script](#script)
+    2. [The Data](#data)
+4. [Outputs](#Outputs)
+5. [Organization](#Organization)
+
+
 ## Description
 
 This script estimates earthquake epicentres using the following information:
@@ -22,7 +32,7 @@ A visualization of the method this script uses to find epicentres. The blue dots
 
 ## Usage
 
-### The script
+### The Script <a name="script"></a>
 
 Install the required packages locally using requirements.txt
 
@@ -36,7 +46,7 @@ Navigate to the **src** directory and run
 python epicentre_finder.py *PATH TO DATAFILE (.csv)*
 ```
 
-## The data
+## The Data <a name="data"></a>
 
 A .csv file containing the following information is required:
 
