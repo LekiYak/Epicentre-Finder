@@ -56,6 +56,22 @@ Frank Dawson Adams building | 12.4 | 7.82 | 45.50552978120353 | -73.575229842891
 IKEA Boucherville | 8.72 | 4.58 | 45.57247265317202 | -73.40117329505202 | |
 Montreal-Mirabel International Airport | 21.3 | 14.5 | 45.671640840480165 | -74.03327505426336 | |
 
+## Outputs
+
+The script will automatically open a pyplot plot showing the epicentre's location, along with a basemap and station locations. This plot is also saved as `epicentre.png` within the **src** directory.
+
+The script will also output the latitude/longitude of the epicentre on the terminal.
+
+_Example output_
+
+
+```
+The epicentre is located at:
+LAT: 35.395303206618905
+LONG: 139.46674702654076
+35.395303206618905 , 139.46674702654076
+```
+
 ## Organization
 ```
 |-- readme.md
