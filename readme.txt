@@ -1,1 +1,0 @@
-pip -r requirements.txt
