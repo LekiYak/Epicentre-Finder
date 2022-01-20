@@ -43,7 +43,7 @@ pip install -r requirements.txt
 python epicentre_finder.py *データファイルのパス(.csv)*
 ```
 
-## データ（方式） <a name="data"></a>
+### データ（方式） <a name="data"></a>
 
 以下の情報が入ってる .csv ファイルが必要です:
 
