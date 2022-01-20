@@ -85,6 +85,7 @@ LONG: 139.46674702654076
 ## Organization
 ```
 |-- readme.md
+|-- readmejp.md
 |-- requirements.txt
 |-- src
     |-- epicentre_finder.py 
