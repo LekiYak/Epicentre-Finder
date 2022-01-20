@@ -33,19 +33,14 @@ def load_data():
 def radii_calculations(df):
     VS,VP = df[~df['VS'].isnull()]['VS'], df[~df['VP'].isnull()]['VP'] #S and P wave speeds, in m/s
 
-    times = zip(list(df['TS']), list(df['TP'])) #Extract TS, TP columns from csv into list of tuples (TS, TP) in seconds
-
     radii = np.array([])
-    for (t1, t2) in times:              
+    for (t1, t2) in zip(list(df['TS']), list(df['TP'])): #Get TS, TP columns from csv into list of tuples (TS, TP) in seconds             
         radii = np.append(radii, round((t1 - t2) / ((1 / VS) - (1 / VP)), 2)) #turning v's into radii from first arrival times
     
     return radii
     
 def find_epicentre(gdf, radii):
-    areas = gdf.buffer(radii) #Creating circles (filled)
-    lines = areas.exterior #Creating perimeters (LineRings)
-
-    lines = lines.to_crs(4326) #resetting CRS to lat/long (4326)
+    lines = gdf.buffer(radii).exterior.lines.to_crs(4326) #Creating LineRings, resetting CRS to lat/long (4326)
     gdf = gdf.to_crs(4326) #CRS World mercator = 3857
 
     intersections_list_multi = [] #Multipoint list of intersection pairs between all intersection pairs
