@@ -46,7 +46,7 @@ Navigate to the **src** directory and run
 python epicentre_finder.py *PATH TO DATAFILE (.csv)*
 ```
 
-## The Data <a name="data"></a>
+### The Data <a name="data"></a>
 
 A .csv file containing the following information is required:
 
