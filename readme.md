@@ -2,6 +2,8 @@
 
 A seismology script created with Python 3.9.9
 
+日本語版readmeはreadmejp.mdにあります。
+
 ## Table of Contents
 1. [Description](#Description)
 2. [Visualization](#Visualization)
