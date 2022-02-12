@@ -40,7 +40,9 @@ def radii_calculations(df):
     return radii
     
 def find_epicentre(gdf, radii):
-    lines = gdf.buffer(radii).exterior.lines.to_crs(4326) #Creating LineRings, resetting CRS to lat/long (4326)
+    areas = gdf.buffer(radii) #Creating circles (filled)
+    lines = areas.exterior #Creating perimeters (LineRings)
+    lines = lines.to_crs(4326) #resetting CRS to lat/long (4326) 
     gdf = gdf.to_crs(4326) #CRS World mercator = 3857
 
     intersections_list_multi = [] #Multipoint list of intersection pairs between all intersection pairs
